@@ -394,10 +394,15 @@
         };
     };
 
-    function bindEvents(el, scope) {
-        el.addEventListener('mouseup', scope.highlightHandler.bind(scope));
-        el.addEventListener('touchend', scope.highlightHandler.bind(scope));
-    }
+    /*
+        Commented bindEvents() method to remove default
+        functionality of selecting text on mouseup event
+
+        function bindEvents(el, scope) {
+            el.addEventListener('mouseup', scope.highlightHandler.bind(scope));
+            el.addEventListener('touchend', scope.highlightHandler.bind(scope));
+        }
+    */
 
     function unbindEvents(el, scope) {
         el.removeEventListener('mouseup', scope.highlightHandler.bind(scope));
@@ -436,7 +441,12 @@
         });
 
         dom(this.el).addClass(this.options.contextClass);
-        bindEvents(this.el, this);
+        /*
+            Commented code to remove default
+            functionality of selecting text on mouseup event
+
+            bindEvents(this.el, this);
+        */
     }
 
     /**
