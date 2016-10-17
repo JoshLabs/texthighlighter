@@ -6,7 +6,7 @@
     "mirz <mirz.hq@gmail.com>"
   ],
   "description": "TextHighlighter allows you to highlight text on web pages.",
-  "main": "build/TextHighlighter.min.js",
+  "main": "src/TextHighlighter.js",
   "moduleType": [
     "globals"
   ],
